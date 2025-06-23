@@ -1,2 +1,188 @@
-(this["webpackJsonpemail-signature-generator"]=this["webpackJsonpemail-signature-generator"]||[]).push([[0],{118:function(e,t,a){},119:function(e,t,a){},129:function(e,t,a){"use strict";a.r(t);var c=a(0),l=a.n(c),r=a(13),i=a.n(r),n=(a(118),a(8)),o=a(38),s=a(16),d=a(195),b=a(203),j=a(193),u=a(210),h=a(206),m=a(214),g=a(215),p=a(209),x=a(204),f=a(205),O=a(194),v=a(213),C=a(196),N=a(197),w=a(208),y=(a(119),a(89)),F=a.n(y),L=a(94),A=a.n(L),S=(a(191),a(2));var T=function(e){return Object(S.jsx)("table",{className:"signature",style:{height:"80px",maxWidth:"100%",whiteSpace:"nowrap",background:"#FFFFFF",fontFamily:"Arial, Helvetica, sans-serif",border:"0",padding:"2px"},children:Object(S.jsx)("tbody",{children:Object(S.jsxs)("tr",{children:[Object(S.jsx)("td",{style:{width:"33%",border:"0",padding:"10px",verticalAlign:"middle"},children:Object(S.jsx)("a",{href:"https://www.ucr.ac.cr/",children:Object(S.jsx)("img",{src:"https://cica-compu.github.io/firma-correo/firma-ucr.png",style:{width:"180px",height:"68px"},alt:"Universidad de Costa Rica"})})}),Object(S.jsx)("td",{style:{width:"33%",border:"0",padding:"10px"},children:Object(S.jsx)("a",{href:"https://cica.ucr.ac.cr",target:"_blank",rel:"noreferrer",children:Object(S.jsx)("img",{src:"https://cica-compu.github.io/firma-correo/"+e.logo,alt:"CICA UCR"})})}),Object(S.jsxs)("td",{style:{width:"33%",border:"0",padding:"20px",color:"white",background:"#00c0f3",fontFamily:"arial",fontSize:"14px",verticalAlign:"middle"},children:[Object(S.jsxs)("strong",{children:[""===e.credentials?"":e.credentials+". ",e.fullName]}),Object(S.jsx)("br",{}),e.title,Object(S.jsx)("br",{}),""===e.phone?"":"Tel: ",""===e.phone?"":e.phone,e.phone&&""===e.mobile?"":" / ",""===e.mobile?"":" Cel:",""===e.mobile?"":e.mobile,Object(S.jsx)("br",{}),""===e.email?"":e.email,Object(S.jsx)("br",{}),Object(S.jsx)("a",{style:{color:"white"},href:"https://cica.ucr.ac.cr",target:"_blank",rel:"noreferrer",children:"www.cica.ucr.ac.cr"})]})]})})})},k=Object(O.a)((function(e){return Object(v.a)({root:{"& .MuiTextField-root":{margin:e.spacing(1)},"& .label-root":{margin:e.spacing(1)}},paper:{padding:e.spacing(2),textAlign:"left",color:e.palette.text.secondary},centeredImage:{display:"block",marginLeft:"auto",marginRight:"auto",marginTop:"1rem",width:"150px"},centeredText:{textAlign:"center"},warningIconStyle:{textAlign:"center",color:"#FFDC00",verticalAlign:"middle"},box:{width:"75%"},inputLabel:{marginLeft:10,marginTop:3},select:{width:250,height:50,marginLeft:.7}})})),I="cica-logo-vertical.png",R="cica-logo-arbol.png",W={logo:"cica-horizontal",fullName:"",credentials:"",title:"",phone:"",mobile:"",email:"",copied:!1};var M=function(){var e=k(),t=l.a.useState(W),a=Object(s.a)(t,2),c=a[0],r=a[1],i=!!c.logo&&!!c.fullName&&!!c.title&&!!c.phone;l.a.useEffect((function(){r(W)}),[]);var O=function(e){r((function(t){return Object(o.a)(Object(o.a)({},t),{},Object(n.a)({},e.target.name,e.target.value))}))},v=function(){var e=document.querySelector(".signature"),t=document.createRange();e&&t.selectNode(e);var a=window.getSelection();a&&(a.removeAllRanges(),a.addRange(t));try{var c=document.execCommand("copy");console.log(c?"Success":"Fail"),r((function(e){return Object(o.a)(Object(o.a)({},e),{},{copied:!0})}))}catch(l){console.log("Fail")}},y=function(){var e,t=F.a.renderToStaticMarkup(Object(S.jsx)(T,{logo:c.logo,fullName:c.fullName,credentials:c.credentials,title:c.title,phone:c.phone,mobile:c.mobile,email:c.email})),a=c.fullName.toLowerCase().split(" "),l=a[0].charAt(0),r=a[1],i=new Blob([t]),n=URL.createObjectURL(i),o=document.createElement("a");o.href=n,o.setAttribute("download","".concat(l).concat(r,".htm")),document.body.appendChild(o),o.click(),null===(e=o.parentNode)||void 0===e||e.removeChild(o)};return Object(S.jsxs)(b.a,{children:[Object(S.jsx)("img",{className:e.centeredImage,src:"cica-logo-vertical.png",alt:"cica-logo"}),Object(S.jsx)(j.a,{variant:"h2",gutterBottom:!0,className:e.centeredText,children:"Generador de firmas CICA"}),Object(S.jsx)(j.a,{variant:"subtitle1",gutterBottom:!0,className:e.centeredText}),Object(S.jsxs)(x.a,{container:!0,spacing:3,children:[Object(S.jsx)(x.a,{item:!0,xs:6,children:Object(S.jsx)(f.a,{className:e.paper,children:Object(S.jsxs)("form",{className:e.root,noValidate:!0,autoComplete:"off",children:[Object(S.jsxs)(u.a,{className:e.box,children:[Object(S.jsx)("p",{children:"Por favor, rellene el formulario con sus datos personales para completar el formato de firma. Luego, haga clic en el bot\xf3n copiar, o bien, descargue el archivo HTML para ser colocado y pegado en su servicio de correo preferido."}),Object(S.jsxs)(h.a,{fullWidth:!0,children:[Object(S.jsx)(m.a,{className:e.inputLabel,required:!0,id:"logo-select",children:"Seleccione el logo"}),Object(S.jsxs)(w.a,{className:e.select,value:c.logo,placeholder:"Select a Logo",name:"logo",onChange:function(e){r((function(t){return Object(o.a)(Object(o.a)({},t),{},Object(n.a)({},e.target.name,e.target.value))}))},children:[Object(S.jsx)(g.a,{value:I,children:"CICA Horizontal"}),Object(S.jsx)(g.a,{value:R,children:"CICA Logo"})]})]})]}),Object(S.jsx)(p.a,{fullWidth:!0,required:!0,label:"Nombre completo",value:c.fullName,name:"fullName",onChange:O}),Object(S.jsx)(p.a,{fullWidth:!0,label:"Grado acad\xe9mico (siglas)",value:c.credentials,name:"credentials",onChange:O}),Object(S.jsx)(p.a,{fullWidth:!0,required:!0,label:"Cargo o t\xedtulo",value:c.title,name:"title",onChange:O}),Object(S.jsx)(p.a,{fullWidth:!0,required:!0,label:"Tel\xe9fono",placeholder:"+506 2511-8200",value:c.phone,name:"phone",onChange:O}),Object(S.jsx)(p.a,{fullWidth:!0,label:"Mobile Phone",placeholder:"+506 8888-8888",value:c.mobile,name:"mobile",onChange:O}),Object(S.jsx)(p.a,{fullWidth:!0,label:"Correo electr\xf3nico",placeholder:"correo@ucr.ac.cr",value:c.email,name:"email",onChange:O}),Object(S.jsx)("br",{}),Object(S.jsx)(d.a,{disabled:JSON.stringify(c)===JSON.stringify(W),onClick:function(){r(W)},color:"secondary",children:"Limpiar"})]})})}),Object(S.jsx)(x.a,{item:!0,xs:6,children:Object(S.jsx)(f.a,{className:e.paper,children:c.fullName?Object(S.jsxs)(l.a.Fragment,{children:[Object(S.jsx)(T,{logo:c.logo,credentials:c.credentials,fullName:c.fullName,title:c.title,phone:c.phone,mobile:c.mobile,email:c.email}),Object(S.jsx)("br",{}),Object(S.jsx)(d.a,{onClick:v,disabled:!i,endIcon:c.copied?Object(S.jsx)(C.a,{}):Object(S.jsx)(N.a,{}),children:c.copied?"Copiado!":"Copiar"}),Object(S.jsx)(d.a,{endIcon:Object(S.jsx)(A.a,{}),onClick:y,disabled:!i,children:"Descargar archivo HTML"})]}):Object(S.jsx)("div",{children:"Por favor ingrese sus datos"})})})]})]})},q=function(e){e&&e instanceof Function&&a.e(3).then(a.bind(null,218)).then((function(t){var a=t.getCLS,c=t.getFID,l=t.getFCP,r=t.getLCP,i=t.getTTFB;a(e),c(e),l(e),r(e),i(e)}))};i.a.render(Object(S.jsx)(l.a.StrictMode,{children:Object(S.jsx)(M,{})}),document.getElementById("root")),q()}},[[129,1,2]]]);
-//# sourceMappingURL=main.b9d8c986.chunk.js.map
+var M = function () {
+  var e = k(),
+    t = React.useState(W),
+    a = t[0],
+    c = t[1],
+    i = !!a.logo && !!a.fullName && !!a.title && !!a.phone;
+
+  React.useEffect(function () {
+    c(W);
+  }, []);
+
+  var handleChange = function (e) {
+    c(function (t) {
+      return {
+        ...t,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  var handleCopy = function () {
+    var signature = document.querySelector(".signature");
+    var range = document.createRange();
+    if (signature) range.selectNode(signature);
+    var selection = window.getSelection();
+    if (selection) {
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+    try {
+      var success = document.execCommand("copy");
+      console.log(success ? "Success" : "Fail");
+      c(function (prev) {
+        return { ...prev, copied: true };
+      });
+    } catch (err) {
+      console.log("Fail");
+    }
+  };
+
+  var handleDownload = function () {
+    var html = ReactDOMServer.renderToStaticMarkup(
+      <T
+        logo={a.logo}
+        fullName={a.fullName}
+        credentials={a.credentials}
+        title={a.title}
+        phone={a.phone}
+        mobile={a.mobile}
+        email={a.email}
+      />
+    );
+    var nameParts = a.fullName.toLowerCase().split(" ");
+    var l = nameParts[0].charAt(0);
+    var r = nameParts[1];
+    var blob = new Blob([html]);
+    var url = URL.createObjectURL(blob);
+    var aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", `${l}${r}.htm`);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.parentNode?.removeChild(aTag);
+  };
+
+  return (
+    <Container>
+      <img className={e.centeredImage} src="cica-logo-vertical.png" alt="cica-logo" />
+      <Typography variant="h2" gutterBottom className={e.centeredText}>
+        Generador de firmas CICA
+      </Typography>
+
+      <Grid container spacing={3}>
+        <Grid item xs={6}>
+          <Paper className={e.paper}>
+            <form className={e.root} noValidate autoComplete="off">
+              <Box className={e.box}>
+                <p>
+                  Por favor, rellene el formulario con sus datos personales para completar el
+                  formato de firma. Luego, haga clic en el botón copiar, o bien, descargue el
+                  archivo HTML para ser colocado y pegado en su servicio de correo preferido.
+                </p>
+                <FormControl fullWidth>
+                  <InputLabel className={e.inputLabel} required id="logo-select">
+                    Seleccione el logo
+                  </InputLabel>
+                  <Select
+                    className={e.select}
+                    value={a.logo}
+                    name="logo"
+                    onChange={handleChange}
+                  >
+                    <MenuItem value="cica-logo-vertical.png">CICA Horizontal</MenuItem>
+                    <MenuItem value="cica-logo-arbol.png">CICA Logo</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>
+
+              <TextField
+                fullWidth
+                required
+                label="Nombre completo"
+                value={a.fullName}
+                name="fullName"
+                onChange={handleChange}
+              />
+              <TextField
+                fullWidth
+                label="Grado académico (siglas)"
+                value={a.credentials}
+                name="credentials"
+                onChange={handleChange}
+              />
+              <TextField
+                fullWidth
+                required
+                label="Cargo o título"
+                value={a.title}
+                name="title"
+                onChange={handleChange}
+              />
+              <TextField
+                fullWidth
+                required
+                label="Teléfono"
+                placeholder="+506 2511-8200"
+                value={a.phone}
+                name="phone"
+                onChange={handleChange}
+              />
+              <TextField
+                fullWidth
+                label="Celular"
+                placeholder="+506 8888-8888"
+                value={a.mobile}
+                name="mobile"
+                onChange={handleChange}
+              />
+              <TextField
+                fullWidth
+                label="Correo electrónico"
+                placeholder="correo@ucr.ac.cr"
+                value={a.email}
+                name="email"
+                onChange={handleChange}
+              />
+              <br />
+              <Button
+                disabled={JSON.stringify(a) === JSON.stringify(W)}
+                onClick={() => c(W)}
+                color="secondary"
+              >
+                Limpiar
+              </Button>
+            </form>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={6}>
+          <Paper className={e.paper}>
+            {a.fullName ? (
+              <>
+                <T
+                  logo={a.logo}
+                  credentials={a.credentials}
+                  fullName={a.fullName}
+                  title={a.title}
+                  phone={a.phone}
+                  mobile={a.mobile}
+                  email={a.email}
+                />
+                <br />
+                <Button onClick={handleCopy} disabled={!i} endIcon={a.copied ? <CopiedIcon /> : <CopyIcon />}>
+                  {a.copied ? "Copiado!" : "Copiar"}
+                </Button>
+                <Button onClick={handleDownload} disabled={!i} endIcon={<DownloadIcon />}>
+                  Descargar archivo HTML
+                </Button>
+              </>
+            ) : (
+              <div>Por favor ingrese sus datos</div>
+            )}
+          </Paper>
+        </Grid>
+      </Grid>
+    </Container>
+  );
+};
