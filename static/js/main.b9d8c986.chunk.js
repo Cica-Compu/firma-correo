@@ -91,7 +91,7 @@ var M = function () {
                     onChange={handleChange}
                   >
                     <MenuItem value="cica-logo-vertical.png">CICA Horizontal</MenuItem>
-                    <MenuItem value="cica-logo-arbol.png">CICA Logo</MenuItem>
+                    // <MenuItem value="cica-logo-arbol.png">CICA Logo</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
